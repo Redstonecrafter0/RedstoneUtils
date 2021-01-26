@@ -1,0 +1,10 @@
+name: RedstoneUtils
+main: net.redstonecraft.redstoneutils.bungee.Main
+version: 1.0
+author: Redstonecrafter0
+depend:
+  - RedstoneAPI
+softdepends:
+  - LuckPerms
+  - LabyModAPI
+  - RedstoneCloud

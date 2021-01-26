@@ -1,0 +1,65 @@
+hubsystem:
+  aliases:
+    - l
+    - lobby
+    - hub
+    - leave
+  lobbies:
+    - lobby
+  refreshrate: 10
+ipc:
+  host: '127.0.0.1'
+  port: 2134
+  token: 'token'
+database: MYSQL # MYSQL or SQLITE
+mysql:
+  host: localhost
+  port: 3306
+  database: redstoneutils
+  username: redstoneutils
+  password: 'redstoneutils'
+sqlitedbName: 'database.db'
+chatcooldown:
+  enabled: true
+  duration: 5
+antibot:
+  totalcooldown:
+    enabled: true
+    value: 1
+  perplayercooldown:
+    enabled: true
+    value: 1
+  vpncheck:
+    enabled: true
+    persistence: 86400
+  motdfirst:
+    enabled: true
+    persistence: 86400
+  jointwice:
+    enabled: true
+    persistence: 86400
+  maxplayersperip:
+    enabled: true
+    count: 3
+customcommands:
+  examplecommand:
+    - 'line1'
+    - 'line2'
+domain: ''
+customversion:
+  enabled: true
+  value: '&9Redstone&cUtils'
+  showalways: true
+queue:
+  enabled: false
+  maxsize: 0
+  timer: 100 # milliseconds
+  queueprioritymode: LOWEST_FIRST # LOWEST_FIRST or DISTRIBUTE
+  finalprioritymode: LOWEST_FIRST # LOWEST_FIRST or DISTRIBUTE
+  queueserver:
+    - queue
+  finalserver:
+    - lobby
+report:
+  enabled: true
+  timeout: 300
